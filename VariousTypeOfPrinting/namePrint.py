@@ -1,0 +1,6 @@
+print('This program display name provided by user')
+print('Enter your name please.')
+name = input()
+print(f'Hi {name}, Please enter your age please')
+age = int(input())
+print(f'Hello {name}, you are {age} years old')
