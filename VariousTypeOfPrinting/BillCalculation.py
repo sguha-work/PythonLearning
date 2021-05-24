@@ -4,8 +4,11 @@ print(""" Here is the menu items of restaurant
         2. Soup 30rs per serve
         3. Dring 20 rs per serve
 """)
-menuList = ['Pizza', 'Soup', 'Drink']
-priceList = [90, 30, 20]
+# tuples as they are constants
+menuList = ('Pizza', 'Soup', 'Drink')
+priceList = (90, 30, 20)
+
+# list as it is variable
 numberOfTakenItemList = [0,0,0]
 while 1>0:
     print('Enter the number to select menu')
