@@ -6,7 +6,7 @@ def ifExist(list, dataToSearch):
     return len(x[0])
 
 def main(fileName):
-    subjectNumberList = ['027','028','029','030','037','039','041', '042','043','044','048','052','054','055','064','066','083','105','265','283','301','302']
+    subjectNumberList = ['27','28','29','30','37','39','41', '42','43','44','48','52','54','55','64','66','83','105','265','283','301','302']
     subjectNameList = ['027-HISTORY','028-POLITICAL SCIENCE', '029-GEOGRAPHY', '030-ECONOMICS', '037-PSYCOLOGY', '039-SOCIOLOGY', '041-MATHEMATICS','042-PHYSICS', '043-CHEMISTRY', '044-BIOLOGY', '048-PHYSICAL EDUCATION', '052-APP-COMMARCIAL ART', '054-BUSINESS STUDIES', '055-ACCOUNTANCY','064-HOME SCIENCE', '066-ENTREPRENEURSHIP', '083-COMPUTER SCIENCE (NEW)', '105-BENGALI', '265-INFORMATICS PRAC.(OLD)', '283-COMPUTER SCIENCE (OLD)', '301-ENGLISH CORE', '302- HINDI CORE']
     index = 0
     for subjectNumber in subjectNumberList:
@@ -18,6 +18,7 @@ def main(fileName):
         count = 0
         for individualLine in linesFromMainFile:
             splitedLine = individualLine.split(',')
+            print(splitedLine)
             serialNumber = splitedLine[0]
             rollNo = splitedLine[1]
             name = splitedLine[2]
@@ -55,4 +56,4 @@ def main(fileName):
         outputFile.close()
         index += 1
 
-main('CLASS XI UPLOAD LIST.xlsx - Sheet1.csv')
+main('CLASS XII UPLOAD MARKS.csv')
